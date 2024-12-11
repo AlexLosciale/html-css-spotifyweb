@@ -1,5 +1,35 @@
 *{
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     font-family: sans-serif;
+}
+
+body div{
+    display: flex;
+}
+
+header{
+    height: 90vh;
+    width: 10vh;
+    background-color: green;
+}
+
+main{
+    height: 90vh;
+    width: 88vh;
+    background-color: blue;
+    overflow: scroll;
+}
+
+.header-main{
+    background-color: rgba(255, 166, 0, 0.515);
+    height: 10vh;
+    width: 88vh;
+    position: fixed;
+}
+
+footer{
+    background-color: red;
+    height: 10vh;
+    width: 100%;
 }
