@@ -60,6 +60,7 @@ main{
     background-color: #141922;
     overflow: scroll;
     width: -webkit-fill-available;
+    padding-bottom: 3%;
 }
 
 .header-main{
@@ -165,7 +166,64 @@ footer{
     background-color: #282828;
     height: 10vh;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    padding: 1%;
 }
+
+.footer-left{
+    display: flex;
+    justify-content: space-between;
+}
+
+.track{ 
+    text-align: left;
+    align-items: center;
+}
+
+.track div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.track h5{
+    font-size: 12px;
+}
+
+.track p{
+    font-size: 10px;
+    color: #717171;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    margin-top: 7px;
+    margin-left: 5px;
+    color: #717171;
+}
+
+.footer-center{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-right{
+    display: flex;
+    font-size: 10px;
+    color: #717171;
+}
+
+.footer-right i{
+    margin-left: 5px;
+}
+
+
 
 @media screen and (min-width: 480px) {
     header{
