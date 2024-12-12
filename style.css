@@ -213,6 +213,20 @@ footer{
     flex-direction: column;
 }
 
+.footer-center-top{
+    color: #717171;
+    font-size: 10px;
+}
+
+.footer-center-top i{
+    margin-left: 10px;
+}
+
+.footer-center-bottom p{
+    color: #717171;
+    font-size: 10px;
+}
+
 .footer-right{
     display: flex;
     font-size: 10px;
@@ -220,7 +234,7 @@ footer{
 }
 
 .footer-right i{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 
