@@ -5,7 +5,7 @@
 }
 
 a{
-    color: white;
+    color: #717171;
     text-decoration: none;
 }
 
@@ -57,20 +57,78 @@ h4{
 /*main*/
 main{
     height: 90vh;
-    width: 88vh;
-    background-color: blue;
+    background-color: #141922;
     overflow: scroll;
+    width: -webkit-fill-available;
 }
 
 .header-main{
-    background-color: rgba(255, 166, 0, 0.515);
+    background-color: #080b1290;
     height: 10vh;
-    width: 88vh;
     position: fixed;
+    padding: 3% 2%;
+    display: flex;
+    justify-content: end;
+    width: -webkit-fill-available;
 }
+
+.header-main button{
+    background-color: #141922;
+    border-color: #C3C4C5;
+    color: #C3C4C5;
+    font-size: 9px;
+    border-radius: 25px 25px;
+    padding: 1% 5%;
+}
+
+.selection{
+    margin-top: 17%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 8px;
+    gap: 10px;
+    padding: 3%;
+    justify-content: center;
+}
+
+h2{
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.music{
+    border: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.card{
+    height: 200px;
+    width: 49%;
+    border: 1px solid white;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.music-img{
+    border: 1px solid white;
+    flex-grow: 3;
+}
+
+.music-test{
+    border: 1px solid white;
+    flex-grow: 1;
+}
+
 /*footer*/
 footer{
-    background-color: red;
+    background-color: #282828;
     height: 10vh;
     width: 100%;
 }
@@ -107,5 +165,33 @@ footer{
 
     .header-main{
         height: 7vh;
+    }
+
+    header a{
+        display: block;
+    }
+
+    .selection{
+        margin-top: 19%;
+        font-size: 10px;
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .header-main button{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .selection{
+        margin-top: 12%;
+        font-size: 14px;
+        gap: 25px;
+    }
+
+    h2{
+        font-size: 25px;
     }
 }
