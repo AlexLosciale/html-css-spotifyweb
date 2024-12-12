@@ -100,30 +100,48 @@ h2{
 }
 
 .music{
-    border: 1px solid white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 0.4rem;
     padding: 2%;
 }
 
 .card{
-    height: 200px;
-    width: 49%;
-    border: 1px solid white;
+    width: calc((100% - 0.4rem) /2);
     margin-top: 2%;
     display: flex;
     flex-direction: column;
 }
 
 .music-img{
-    border: 1px solid white;
     flex-grow: 3;
 }
 
 .music-test{
-    border: 1px solid white;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    text-align: center;
+}
+
+.music-test p{
+    color: #717171;
+    font-size: 12px;
+}
+
+.music-jhon{
+    display: flex;
+    padding: 2%;
+    gap: 0.4rem;
+}
+
+.card2{
+    width: calc((100% - 0.4rem) /2);
+    display: flex;
+    flex-direction: column;
 }
 
 /*footer*/
@@ -193,5 +211,12 @@ footer{
 
     h2{
         font-size: 25px;
+    }
+
+    .card{
+        width: calc((100% - 1.2rem) /4);
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
     }
 }
