@@ -208,13 +208,17 @@ footer{
     color: #717171;
 }
 
+.icon i{
+    margin-bottom: 3px;
+}
+
 .footer-center{
     display: flex;
     flex-direction: column;
 }
 
 .footer-center-top{
-    color: #717171;
+    color: #FFFFFF;
     font-size: 10px;
 }
 
@@ -225,12 +229,18 @@ footer{
 .footer-center-bottom p{
     color: #717171;
     font-size: 10px;
+    margin-top: 8px;
+}
+
+.range{
+    width: 70px;
+    margin-top: 5px;
 }
 
 .footer-right{
     display: flex;
     font-size: 10px;
-    color: #717171;
+    color: #FFFFFF;
 }
 
 .footer-right i{
@@ -282,6 +292,24 @@ footer{
         font-size: 10px;
         gap: 15px;
     }
+
+    footer{
+        padding: 3%;
+    }
+
+    .icon{
+        margin-left: 10px;
+    }
+
+    .footer-center-top{
+        font-size: 15px;
+        margin-left: 22px;
+    }
+    
+    .range{
+        width: 140px;
+        margin-top: 5px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -310,5 +338,54 @@ footer{
 
     .card2{
         width: calc((50% - 0.4rem) /2);
+    }
+
+    .range{
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .footer-center-bottom p{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .footer-center-top{
+        font-size: 20px;
+        margin-left: 70px;
+    }
+
+    .footer-center-top i{
+        margin-left: 19px;
+    }
+
+    .footer-right i{
+        margin-left: 15px;
+    }
+
+    .footer-right{
+        font-size: 15px;
+    }
+
+    .icon{
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+    }
+
+    .icon i{
+        margin-left: 10px;
+    }
+
+    .header-main button{
+        font-size: 15px;
+        border-radius: 25px 25px;
+        padding: 3% 5%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .music{
+        flex-wrap: nowrap;
     }
 }
