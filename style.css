@@ -12,6 +12,58 @@ a{
 body div{
     display: flex;
 }
+/*hover*/
+.color1:hover{
+    color: #FFFFFF;
+    border-bottom: 3px solid green;
+}
+
+.playlist a:hover{
+    color: #FFFFFF;
+    border-left: 3px solid green;
+}
+
+.header-main button:hover{
+    cursor: pointer;
+}
+
+.selection a:hover{
+    color: #FFFFFF;
+    border-bottom: 3px solid green;
+}
+
+.icon i:hover{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer-center-top i:hover{
+    color: #C3C4C5;
+    cursor: pointer;
+}
+
+.footer-right i:hover{
+    color: #C3C4C5;
+    cursor: pointer;
+}
+
+.header-main button:hover{
+    background-color: #141922;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.music-img:hover{
+    cursor: pointer;
+}
+
+.music-img:hover .move2{
+    display: block;
+}
+
+.music-img:hover .move3{
+    display: block;
+}
 /*header*/
 header{
     height: 90vh;
@@ -20,6 +72,10 @@ header{
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+}
+
+.move1{
+    margin-right: 5px;
 }
 
 .spotify2{
@@ -58,14 +114,14 @@ h4{
 main{
     height: 90vh;
     background-color: #141922;
-    overflow: scroll;
+    overflow: auto;
     width: -webkit-fill-available;
     padding-bottom: 3%;
 }
 
 .header-main{
     background-color: #080b1290;
-    height: 10vh;
+    height: 3rem;
     position: fixed;
     padding: 3% 2%;
     display: flex;
@@ -116,6 +172,25 @@ h2{
 
 .music-img{
     flex-grow: 3;
+    position: relative;
+}
+
+.move2{
+    position: absolute;
+    color: #f8f8f8;
+    top: 22%;
+    right: 15%;
+    display: none;
+    font-size: 100px;
+}
+
+.move3{
+    position: absolute;
+    color: #f8f8f8;
+    top: 22%;
+    right: 15%;
+    display: none;
+    font-size: 100px;
 }
 
 .music-test{
@@ -259,6 +334,11 @@ footer{
         display: inline-block;
     }
 
+    .header-main{
+        height: 4rem;
+        padding: 3% 2%;
+    }
+
     .spotify{
         display: none;
     }
@@ -277,10 +357,6 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 10px;
-    }
-
-    .header-main{
-        height: 7vh;
     }
 
     header a{
@@ -314,15 +390,15 @@ footer{
 
 @media screen and (min-width: 768px) {
 
-    .header-main button{
-        font-size: 15px;
-        text-align: center;
-    }
-
     .selection{
         margin-top: 12%;
         font-size: 14px;
         gap: 25px;
+    }
+
+    .header-main{
+        height: 6rem;
+        padding: 3% 2%;
     }
 
     h2{
@@ -377,15 +453,66 @@ footer{
         margin-left: 10px;
     }
 
-    .header-main button{
-        font-size: 15px;
-        border-radius: 25px 25px;
-        padding: 3% 5%;
-    }
 }
 
 @media screen and (min-width: 1024px) {
     .music{
         flex-wrap: nowrap;
+    }
+
+    .track img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .track h5{
+        font-size: 20px;
+    }
+    
+    .track p{
+        font-size: 15px;
+    }
+
+    .icon i{
+        margin-top: 15px;
+    }
+
+    h2{
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+    .header-main{
+        height: 6rem;
+        padding: 3% 2%;
+    }
+
+    .move3{
+        top: 10%;
+        display: none;
+        font-size: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-main{
+        height: 8rem;
+        padding: 3% 2%;
+    }
+
+    .move2{
+        position: absolute;
+        color: #FFFFFF;
+        top: 15%;
+        right: 15%;
+        display: none;
+        font-size: 150px;
+    }
+
+    .move3{
+        top: 10%;
+        right: 10%;
+        display: none;
+        font-size: 250px;
     }
 }
